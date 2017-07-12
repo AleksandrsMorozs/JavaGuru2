@@ -45,7 +45,7 @@ public class Product {
 
         }else{
            o = product.title != null;
-        })
+
         return false;
 
         if(description != null){
