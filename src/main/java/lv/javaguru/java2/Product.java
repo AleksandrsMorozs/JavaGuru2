@@ -38,11 +38,37 @@ public class Product {
 
         if (title != null ? !title.equals(product.title) : product.title != null) return false;
         return description != null ? description.equals(product.description) : product.description == null;
+
+        /*f(
+                if (title != null){
+            o =  !title.equals(product.title);
+
+        }else{
+           o = product.title != null;
+        })
+        return false;
+
+        if(description != null){
+            description.equals(product.description);
+        }else{
+            product.description == null;
+        }*/
+
     }
+
+
 
     @Override
     public int hashCode() {
         int result = title != null ? title.hashCode() : 0;
+
+       /* if (title != null){
+            result = title.hashCode();
+        }else {
+            result = 0;
+        }*/
+
+
         result = 31 * result + (description != null ? description.hashCode() : 0);
         return result;
     }
